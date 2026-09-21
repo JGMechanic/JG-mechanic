@@ -6,17 +6,21 @@
 nav{position:sticky;top:0;z-index:50;background:#050505f2;border-bottom:2px solid var(--y);display:flex;justify-content:center;align-items:center;gap:25px;flex-wrap:wrap;padding:13px 18px}
 nav b{color:var(--y);font-size:20px;margin-right:15px}nav a{color:#fff;text-decoration:none;font-weight:800}nav a:hover{color:var(--y)}
 .hero{max-width:1600px;margin:auto}.hero img{display:block;width:100%}.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;padding:22px;background:#111}
-.btn{background:var(--y);color:#050505;padding:14px 20px;border-radius:8px;text-decoration:none;font-weight:900}.btn.white{background:white}.btn.fb{background:#1877f2;color:white}
+.btn{background:var(--y);color:#050505;padding:14px 20px;border-radius:8px;text-decoration:none;font-weight:900}.btn.white{background:white}.btn.fb{background:#1877f2;color:white}.btn.yt{background:#fff;color:#111}
 section{max-width:1200px;margin:auto;padding:60px 22px;border-bottom:1px solid #2b2b2b}h2{color:var(--y);font-size:34px;text-transform:uppercase;margin:0 0 20px}.lead{color:#ccc;font-size:18px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}.card{background:var(--p);border:1px solid #333;border-radius:12px;padding:20px}.card h3{color:var(--y)}
-.priceimg{display:block;width:100%;height:auto;border-radius:10px;border:1px solid #444;background:white}
+.video-wrap{max-width:950px;margin:auto}.video-wrap video{display:block;width:100%;height:auto;border-radius:12px;border:2px solid #333;background:#000}.priceimg{display:block;width:100%;height:auto;border-radius:10px;border:1px solid #444;background:white}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px}.gallery-item{height:190px;overflow:hidden;border-radius:10px;border:2px solid #333;background:#111}.gallery-item:hover{border-color:var(--y)}.gallery-item img{width:100%;height:100%;object-fit:cover;display:block}
 .contact{background:#151515;border-left:5px solid var(--y);padding:24px;border-radius:9px}.contact a{color:var(--y)}footer{text-align:center;padding:30px;color:#aaa}
 @media(max-width:650px){nav{gap:12px;font-size:13px}nav b{width:100%;text-align:center;margin:0}section{padding:42px 16px}h2{font-size:27px}.gallery-item{height:160px}}
 </style></head><body>
 <nav><b>JG MOBILE MECHANIC</b><a href="#home">Home</a><a href="#services">Services</a><a href="#prices">Price List</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
 <div id="home" class="hero"><img src="jg-homepage.png" alt="JG Mobile Mechanic"></div>
-<div class="buttons"><a class="btn" href="tel:07857054666">☎ CALL 07857 054666</a><a class="btn white" href="mailto:jg.mechanic.73@gmail.com">✉ EMAIL US</a><a class="btn fb" href="https://www.facebook.com/JGmechanic" target="_blank" rel="noopener">f FACEBOOK</a></div>
+<div class="buttons"><a class="btn" href="tel:07857054666">☎ CALL 07857 054666</a><a class="btn white" href="mailto:jg.mechanic.73@gmail.com">✉ EMAIL US</a><a class="btn fb" href="https://www.facebook.com/jgmechanics" target="_blank" rel="noopener">f FACEBOOK</a><a class="btn yt" href="https://www.youtube.com/@JohnnyG73" target="_blank" rel="noopener">▶ YOUTUBE</a></div>
+<section id="video"><h2>JG Mobile Mechanic</h2>
+<p class="lead">Watch our presentation video and see JG Mobile Mechanic at work.</p>
+<div class="video-wrap"><video controls playsinline preload="metadata"><source src="presentation-video.mp4" type="video/mp4">Your browser does not support video playback.</video></div>
+</section>
 <section id="services"><h2>Services</h2><p class="lead">Professional mobile servicing, diagnostics and mechanical repairs at your home, workplace or suitable roadside location.</p>
 <div class="cards"><div class="card"><h3>Servicing</h3><p>Oil & filter, full and major services, filters, spark plugs and maintenance.</p></div><div class="card"><h3>Brakes & Suspension</h3><p>Pads, discs, brake fluid, springs, shocks, drop links, bearings and steering components.</p></div><div class="card"><h3>Engine & Cooling</h3><p>Belts, thermostat, water pump, radiator, coolant, sensors and engine repairs.</p></div><div class="card"><h3>Major Repairs</h3><p>Clutch, dual-mass flywheel, timing belt kit, timing chain, turbo and DPF removal/refit.</p></div><div class="card"><h3>Diagnostics</h3><p>Diagnostic scanning, advanced diagnostics, battery coding and service-light resets.</p></div></div></section>
 <section id="prices"><h2>Full Labour Price List</h2><p class="lead">This is your updated full price list, including timing belt/cambelt, timing chain, clutch, DMF, turbo, DPF, diagnostics and call-out charges.</p><img class="priceimg" src="price-list.png" alt="JG Mobile Mechanic full labour price list"></section>
@@ -40,5 +44,5 @@ section{max-width:1200px;margin:auto;padding:60px 22px;border-bottom:1px solid #
 <a class="gallery-item" href="gallery-17.jpg" target="_blank"><img src="gallery-17.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
 <a class="gallery-item" href="gallery-18.jpg" target="_blank"><img src="gallery-18.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
 <a class="gallery-item" href="gallery-19.jpg" target="_blank"><img src="gallery-19.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a></div></section>
-<section id="contact"><h2>Contact</h2><div class="contact"><p><strong>JG Mobile Mechanic — Johnny G.</strong></p><p>☎ <a href="tel:07857054666">07857 054666</a> — Call or WhatsApp</p><p>✉ <a href="mailto:jg.mechanic.73@gmail.com">jg.mechanic.73@gmail.com</a></p><p>Facebook: <a href="https://www.facebook.com/JGmechanic" target="_blank" rel="noopener">JG Mechanic</a></p></div></section>
+<section id="contact"><h2>Contact</h2><div class="contact"><p><strong>JG Mobile Mechanic — Johnny G.</strong></p><p>☎ <a href="tel:07857054666">07857 054666</a> — Call or WhatsApp</p><p>✉ <a href="mailto:jg.mechanic.73@gmail.com">jg.mechanic.73@gmail.com</a></p><p>Facebook: <a href="https://www.facebook.com/jgmechanics" target="_blank" rel="noopener">JG Mechanic</a></p><p>YouTube: <a href="https://www.youtube.com/@JohnnyG73" target="_blank" rel="noopener">@JohnnyG73</a></p></div></section>
 <footer>© JG Mobile Mechanic • Quality Service • Reliable • At Your Door</footer></body></html>
