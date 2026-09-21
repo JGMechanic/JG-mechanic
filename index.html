@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="JG Mobile Mechanic - mobile vehicle servicing, repairs and diagnostics.">
+<title>JG Mobile Mechanic | Mobile Vehicle Repairs</title>
+<style>
+:root{--black:#07090d;--panel:#10151d;--panel2:#151c26;--gold:#f6b900;--white:#f7f7f5;--muted:#aeb7c4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.5}
+a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:#05070aeF;border-bottom:1px solid #ffffff16;backdrop-filter:blur(10px)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{height:62px;width:auto;display:block}.navlinks{display:flex;gap:25px;font-weight:800;font-size:14px}.navlinks a:hover{color:var(--gold)}
+.phone{background:var(--gold);color:#090909;padding:12px 17px;border-radius:8px;font-weight:900;white-space:nowrap}
+.hero{min-height:650px;display:flex;align-items:center;background:radial-gradient(circle at 80% 20%,#303b4a 0,#101722 38%,#07090d 72%);position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;inset:auto -10% -160px 20%;height:300px;background:#000;filter:blur(50px);opacity:.55}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center;position:relative;z-index:2}
+.hero-logo{width:min(570px,100%);filter:drop-shadow(0 20px 35px #0009)}
+h1{font-size:clamp(38px,5vw,66px);line-height:1.02;margin:0 0 18px}.gold{color:var(--gold)}
+.hero p{font-size:19px;color:#d3dae4;max-width:610px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{padding:14px 21px;border-radius:8px;font-weight:900}.primary{background:var(--gold);color:#08090b}.outline{border:1px solid #ffffff40}
+.van{background:linear-gradient(145deg,#f3f5f7,#aeb7c2);border-radius:22px;min-height:350px;display:flex;align-items:center;justify-content:center;box-shadow:0 25px 70px #000b;position:relative;overflow:hidden}
+.van:before{content:"JG";position:absolute;font-size:250px;font-weight:900;color:#11182712;right:-20px;bottom:-70px}.van-art{font-size:100px;filter:drop-shadow(0 15px 15px #0006)}.van-caption{position:absolute;bottom:20px;background:#080b10e8;padding:9px 15px;border-radius:7px;font-weight:900;letter-spacing:1px}
+.quick{background:#0d1219;border-top:1px solid #ffffff12;border-bottom:1px solid #ffffff12}.quick-grid{display:grid;grid-template-columns:repeat(4,1fr)}.quick-item{text-align:center;padding:22px 10px;border-right:1px solid #ffffff12}.quick-item:last-child{border:0}.qi{font-size:28px;color:var(--gold)}.quick-item b{display:block;margin-top:5px}
+section{padding:78px 0}.section-head{text-align:center;margin-bottom:42px}.section-head h2{font-size:39px;margin:0 0 8px}.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid #ffffff12;border-radius:13px;padding:25px;box-shadow:0 12px 35px #0005}.card .icon{font-size:30px}.card h3{margin:8px 0;font-size:20px}.card p{color:var(--muted);margin:0}
+#prices{background:#0b1017}.prices{display:grid;grid-template-columns:1fr 1fr;gap:20px}.pricebox{background:var(--panel);border:1px solid #ffffff12;border-radius:12px;overflow:hidden}.pricebox h3{margin:0;padding:15px 18px;background:#05070a;border-bottom:2px solid var(--gold)}.row{display:flex;justify-content:space-between;gap:15px;padding:11px 17px;border-bottom:1px solid #ffffff0b;color:#d9dee6}.row:last-child{border:0}.price{font-weight:900;color:var(--gold);white-space:nowrap}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.about h2{font-size:39px;margin-top:0}.ticks{list-style:none;padding:0}.ticks li{margin:13px 0;font-weight:700}.ticks li:before{content:"✓";color:var(--gold);font-weight:900;margin-right:10px}
+.contact{background:linear-gradient(135deg,#111923,#07090d)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}.contact h2{font-size:42px;margin-top:0}.contact-card{background:#f5f5f2;color:#111;border-radius:13px;padding:25px}.ci{padding:14px 0;border-bottom:1px solid #ddd}.ci:last-child{border:0}.ci strong{display:block}.ci a{color:#8a6500;font-weight:900}
+footer{padding:28px 0;text-align:center;color:#8e98a7;border-top:1px solid #ffffff12}.footer-logo{height:55px;margin-bottom:10px}
+@media(max-width:850px){.navlinks{display:none}.hero-grid,.about,.contact-grid,.prices{grid-template-columns:1fr}.hero{padding:70px 0}.quick-grid{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.logo{height:53px}.phone{padding:9px 12px;font-size:13px}.hero-grid{gap:20px}.van{min-height:230px}.cards{grid-template-columns:1fr}.quick-grid{grid-template-columns:1fr 1fr}.quick-item{padding:17px 5px;font-size:13px}section{padding:58px 0}.row{font-size:14px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<img class="logo" src="logo.png" alt="Johnny G. JG Mobile Mechanic logo">
+<nav class="navlinks"><a href="#services">Services</a><a href="#prices">Price List</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<a class="phone" href="tel:07857054666">📞 07857 054666</a>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<img class="hero-logo" src="logo.png" alt="JG Mobile Mechanic">
+<h1>Mobile mechanics.<br><span class="gold">At your door.</span></h1>
+<p>Professional vehicle servicing, repairs and diagnostics carried out at your home, workplace or another suitable location.</p>
+<div class="actions"><a class="btn primary" href="tel:07857054666">CALL NOW</a><a class="btn outline" href="mailto:jg.mechanic.73@gmail.com">EMAIL ME</a></div>
+</div>
+<div class="van"><div class="van-art">🚐</div><div class="van-caption">JG MOBILE MECHANIC</div></div>
+</div></section>
+
+<div class="quick"><div class="wrap quick-grid">
+<div class="quick-item"><div class="qi">🔧</div><b>Diagnostics</b></div><div class="quick-item"><div class="qi">🛢️</div><b>Servicing</b></div><div class="quick-item"><div class="qi">🛑</div><b>Brakes</b></div><div class="quick-item"><div class="qi">⚙️</div><b>Repairs</b></div>
+</div></div>
+
+<section id="services"><div class="wrap"><div class="section-head"><h2>Our <span class="gold">Services</span></h2><p>A wide range of mobile mechanical work for cars and vans.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🔧</div><h3>Diagnostics & Fault Finding</h3><p>Fault-code scanning and diagnostic checks to help identify vehicle problems.</p></div>
+<div class="card"><div class="icon">🛢️</div><h3>Servicing</h3><p>Oil and filter changes, full services, major services and routine maintenance.</p></div>
+<div class="card"><div class="icon">🛑</div><h3>Brakes</h3><p>Pads, discs and pads, brake fluid and other brake-related repairs.</p></div>
+<div class="card"><div class="icon">🚗</div><h3>Suspension & Steering</h3><p>Springs, shocks, drop links, track rod ends, lower arms and wheel bearings.</p></div>
+<div class="card"><div class="icon">⚙️</div><h3>Engine Repairs</h3><p>Thermostats, water pumps, radiators, belts, filters, sensors and more.</p></div>
+<div class="card"><div class="icon">🔋</div><h3>Electrical & Starting</h3><p>Batteries, starters, alternators and basic electrical repairs.</p></div>
+</div></div></section>
+
+<section id="prices"><div class="wrap"><div class="section-head"><h2>Labour <span class="gold">Price List</span></h2><p>Labour only. Parts are extra. Please ask for a quote for anything not listed.</p></div>
+<div class="prices">
+<div class="pricebox"><h3>Servicing & Brakes</h3>
+<div class="row"><span>Oil & filter</span><b class="price">£40</b></div><div class="row"><span>Full service</span><b class="price">£60</b></div><div class="row"><span>Major service</span><b class="price">£80</b></div><div class="row"><span>Front pads</span><b class="price">£40</b></div><div class="row"><span>Rear pads</span><b class="price">£40</b></div><div class="row"><span>Front discs & pads</span><b class="price">£70</b></div><div class="row"><span>Rear discs & pads</span><b class="price">£70</b></div><div class="row"><span>Brake fluid</span><b class="price">£40</b></div>
+</div>
+<div class="pricebox"><h3>Suspension & Steering</h3>
+<div class="row"><span>Front drop links (pair)</span><b class="price">£60</b></div><div class="row"><span>Front drop link (one)</span><b class="price">£40</b></div><div class="row"><span>Front spring (each)</span><b class="price">£80</b></div><div class="row"><span>Rear springs (pair)</span><b class="price">£70</b></div><div class="row"><span>Front shock (each)</span><b class="price">£80</b></div><div class="row"><span>Rear shocks (each)</span><b class="price">£60</b></div><div class="row"><span>Track rod end</span><b class="price">£40</b></div><div class="row"><span>Lower arm</span><b class="price">£80</b></div>
+</div>
+<div class="pricebox"><h3>Engine & Drivetrain</h3>
+<div class="row"><span>Front wheel bearing</span><b class="price">£110</b></div><div class="row"><span>Rear wheel bearing</span><b class="price">£90</b></div><div class="row"><span>CV boot</span><b class="price">£80</b></div><div class="row"><span>Driveshaft</span><b class="price">£110</b></div><div class="row"><span>Battery</span><b class="price">£20</b></div><div class="row"><span>Starter</span><b class="price">£80</b></div><div class="row"><span>Alternator</span><b class="price">£90</b></div><div class="row"><span>Auxiliary belt</span><b class="price">£40</b></div><div class="row"><span>Tensioner & belt</span><b class="price">£70</b></div><div class="row"><span>Thermostat</span><b class="price">£80</b></div><div class="row"><span>Water pump</span><b class="price">£110</b></div><div class="row"><span>Radiator</span><b class="price">£90</b></div><div class="row"><span>Coolant flush</span><b class="price">£40</b></div>
+</div>
+<div class="pricebox"><h3>Filters, Ignition & Sensors</h3>
+<div class="row"><span>Spark plugs</span><b class="price">£30</b></div><div class="row"><span>Glow plugs</span><b class="price">£70</b></div><div class="row"><span>Ignition coil</span><b class="price">£20</b></div><div class="row"><span>Fuel filter</span><b class="price">£30</b></div><div class="row"><span>Air filter</span><b class="price">£15</b></div><div class="row"><span>Cabin filter</span><b class="price">£15</b></div><div class="row"><span>MAF</span><b class="price">£20</b></div><div class="row"><span>MAP</span><b class="price">£20</b></div><div class="row"><span>EGR</span><b class="price">£90</b></div>
+</div>
+</div></div></section>
+
+<section id="about"><div class="wrap about"><div><h2>About <span class="gold">JG Mobile Mechanic</span></h2><p>I'm Johnny, running JG Mobile Mechanic as a personal mobile mechanic service. I bring the tools and the work to you, helping make vehicle maintenance more convenient.</p><ul class="ticks"><li>Mobile service</li><li>Clear labour pricing</li><li>Servicing and repairs</li><li>Diagnostics available</li><li>Home or workplace visits</li></ul></div><img class="hero-logo" src="logo.png" alt="JG Mobile Mechanic"></div></section>
+
+<section id="contact" class="contact"><div class="wrap contact-grid"><div><h2>Get in <span class="gold">Touch</span></h2><p>For bookings or to discuss a repair, call or email JG Mobile Mechanic.</p><div class="actions"><a class="btn primary" href="tel:07857054666">CALL 07857 054666</a></div></div><div class="contact-card">
+<div class="ci"><strong>📞 Phone</strong><a href="tel:07857054666">07857 054666</a></div>
+<div class="ci"><strong>✉ Email</strong><a href="mailto:jg.mechanic.73@gmail.com">jg.mechanic.73@gmail.com</a></div>
+<div class="ci"><strong>▶ YouTube</strong><a href="https://www.youtube.com/@JohnnyG73" target="_blank" rel="noopener">youtube.com/@JohnnyG73</a></div>
+</div></div></section>
+</main>
+<footer><img class="footer-logo" src="logo.png" alt="JG Mobile Mechanic"><br>© 2026 JG Mobile Mechanic · Mobile vehicle repairs & servicing</footer>
+</body></html>
