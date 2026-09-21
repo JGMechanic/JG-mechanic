@@ -1,106 +1,44 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>JG Mobile Mechanic | Johnny G.</title>
-<meta name="description" content="Professional mobile mechanic services at your home, workplace or roadside location.">
 <style>
-:root{--gold:#ffd21a;--black:#080808;--panel:#151515;--muted:#c9c9c9}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:#fff;font-family:Arial,Helvetica,sans-serif;line-height:1.55}
-nav{position:sticky;top:0;z-index:100;background:#050505ee;border-bottom:2px solid var(--gold);display:flex;align-items:center;justify-content:center;gap:28px;padding:14px 18px;flex-wrap:wrap}
-nav a{color:#fff;text-decoration:none;font-weight:800}nav a:hover{color:var(--gold)}.brand{color:var(--gold);font-size:20px;margin-right:20px}
-.hero{max-width:1600px;margin:auto;position:relative}.hero img{width:100%;display:block}.actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;padding:22px;background:#111}
-.btn{display:inline-block;padding:14px 22px;border-radius:8px;background:var(--gold);color:#050505;text-decoration:none;font-weight:900}.btn.alt{background:#fff}
-section{max-width:1150px;margin:auto;padding:65px 24px;border-bottom:1px solid #292929}h1,h2{color:var(--gold);text-transform:uppercase}h2{font-size:34px;margin:0 0 25px}
-.intro{font-size:19px;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.card{background:var(--panel);border:1px solid #333;border-radius:12px;padding:22px}.card h3{color:var(--gold);margin-top:0}
-table{width:100%;border-collapse:collapse;background:#111;border-radius:12px;overflow:hidden}th,td{padding:13px 16px;border-bottom:1px solid #333;text-align:left}th{background:var(--gold);color:#000}td:last-child{font-weight:900;color:var(--gold);text-align:right}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.photo{min-height:170px;background:#181818;border:2px dashed #555;border-radius:10px;display:grid;place-items:center;color:#aaa;text-align:center;padding:20px}
-.contactbox{background:#151515;border-left:5px solid var(--gold);padding:25px;border-radius:8px}.contactbox a{color:var(--gold);font-weight:bold}
-.small{color:#aaa;font-size:14px}footer{text-align:center;padding:35px 20px;color:#aaa}
-@media(max-width:650px){nav{gap:14px;font-size:14px}.brand{width:100%;text-align:center;margin:0}section{padding:45px 17px}h2{font-size:27px}}
-</style>
-</head>
-<body>
-<nav>
-<span class="brand">JG MOBILE MECHANIC</span>
-<a href="#home">Home</a><a href="#services">Services</a><a href="#prices">Price List</a>
-<a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
-</nav>
-
+:root{--y:#ffd21a;--bg:#070707;--p:#151515}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:white;font-family:Arial,sans-serif;line-height:1.5}
+nav{position:sticky;top:0;z-index:50;background:#050505f2;border-bottom:2px solid var(--y);display:flex;justify-content:center;align-items:center;gap:25px;flex-wrap:wrap;padding:13px 18px}
+nav b{color:var(--y);font-size:20px;margin-right:15px}nav a{color:#fff;text-decoration:none;font-weight:800}nav a:hover{color:var(--y)}
+.hero{max-width:1600px;margin:auto}.hero img{display:block;width:100%}.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;padding:22px;background:#111}
+.btn{background:var(--y);color:#050505;padding:14px 20px;border-radius:8px;text-decoration:none;font-weight:900}.btn.white{background:white}.btn.fb{background:#1877f2;color:white}
+section{max-width:1200px;margin:auto;padding:60px 22px;border-bottom:1px solid #2b2b2b}h2{color:var(--y);font-size:34px;text-transform:uppercase;margin:0 0 20px}.lead{color:#ccc;font-size:18px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}.card{background:var(--p);border:1px solid #333;border-radius:12px;padding:20px}.card h3{color:var(--y)}
+.priceimg{display:block;width:100%;height:auto;border-radius:10px;border:1px solid #444;background:white}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px}.gallery-item{height:190px;overflow:hidden;border-radius:10px;border:2px solid #333;background:#111}.gallery-item:hover{border-color:var(--y)}.gallery-item img{width:100%;height:100%;object-fit:cover;display:block}
+.contact{background:#151515;border-left:5px solid var(--y);padding:24px;border-radius:9px}.contact a{color:var(--y)}footer{text-align:center;padding:30px;color:#aaa}
+@media(max-width:650px){nav{gap:12px;font-size:13px}nav b{width:100%;text-align:center;margin:0}section{padding:42px 16px}h2{font-size:27px}.gallery-item{height:160px}}
+</style></head><body>
+<nav><b>JG MOBILE MECHANIC</b><a href="#home">Home</a><a href="#services">Services</a><a href="#prices">Price List</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
 <div id="home" class="hero"><img src="jg-homepage.png" alt="JG Mobile Mechanic"></div>
-<div class="actions">
-<a class="btn" href="tel:07857054666">☎ CALL NOW — 07857 054666</a>
-<a class="btn alt" href="mailto:jg.mechanic.73@gmail.com">✉ EMAIL US</a>
-</div>
-
-<section id="services"><h2>Services</h2><p class="intro">Reliable mobile vehicle repairs and maintenance at your home, workplace or roadside location.</p>
-<div class="cards">
-<div class="card"><h3>Diagnostics</h3><p>Check-engine-light diagnostics and fault finding.</p></div>
-<div class="card"><h3>Servicing</h3><p>Oil & filter, full and major servicing, filters, plugs and general maintenance.</p></div>
-<div class="card"><h3>Brakes & Suspension</h3><p>Brake pads, discs, fluid, springs, shock absorbers, drop links, track rod ends and lower arms.</p></div>
-<div class="card"><h3>Engine & Electrical</h3><p>Starter motors, alternators, batteries, belts, cooling-system repairs and engine-related repairs.</p></div>
-<div class="card"><h3>Clutch & Timing</h3><p>Clutch changes, timing belts/chains and related mechanical work.</p></div>
-</div></section>
-
-<section id="prices"><h2>Price List</h2>
-<p class="small">Labour prices previously supplied for JG Mobile Mechanic. Parts and additional work may be extra; confirm the final price before work begins.</p>
-<table><thead><tr><th>Job</th><th>Labour</th></tr></thead><tbody><tr><td>Oil & filter service</td><td>£40</td></tr>
-<tr><td>Full service</td><td>£60</td></tr>
-<tr><td>Major service</td><td>£80</td></tr>
-<tr><td>Front brake pads</td><td>£40</td></tr>
-<tr><td>Rear brake pads</td><td>£40</td></tr>
-<tr><td>Front discs & pads</td><td>£70</td></tr>
-<tr><td>Rear discs & pads</td><td>£70</td></tr>
-<tr><td>Brake fluid change</td><td>£40</td></tr>
-<tr><td>Front drop links (pair)</td><td>£60</td></tr>
-<tr><td>One drop link</td><td>£40</td></tr>
-<tr><td>Front coil spring (each)</td><td>£80</td></tr>
-<tr><td>Rear coil spring (pair)</td><td>£70</td></tr>
-<tr><td>Front shock absorber (each)</td><td>£80</td></tr>
-<tr><td>Rear shock absorbers (pair)</td><td>£60</td></tr>
-<tr><td>Track rod end (each)</td><td>£40</td></tr>
-<tr><td>Lower arm (each)</td><td>£80</td></tr>
-<tr><td>Wheel bearing – front</td><td>£110</td></tr>
-<tr><td>Wheel bearing – rear</td><td>£90</td></tr>
-<tr><td>CV boot</td><td>£80</td></tr>
-<tr><td>Driveshaft</td><td>£110</td></tr>
-<tr><td>Battery replacement</td><td>£20</td></tr>
-<tr><td>Starter motor</td><td>£80</td></tr>
-<tr><td>Alternator</td><td>£90</td></tr>
-<tr><td>Auxiliary belt</td><td>£40</td></tr>
-<tr><td>Tensioner & belt</td><td>£70</td></tr>
-<tr><td>Thermostat</td><td>£80</td></tr>
-<tr><td>Water pump (not timing-belt driven)</td><td>£110</td></tr>
-<tr><td>Radiator</td><td>£90</td></tr>
-<tr><td>Coolant flush</td><td>£40</td></tr>
-<tr><td>Spark plugs</td><td>£30</td></tr>
-<tr><td>Glow plugs</td><td>£70</td></tr>
-<tr><td>Ignition coil</td><td>£20</td></tr>
-<tr><td>Fuel filter</td><td>£30</td></tr>
-<tr><td>Air filter</td><td>£15</td></tr>
-<tr><td>Cabin filter</td><td>£15</td></tr>
-<tr><td>MAF sensor</td><td>£20</td></tr>
-<tr><td>MAP sensor</td><td>£20</td></tr>
-<tr><td>EGR valve</td><td>£90</td></tr></tbody></table></section>
-
-<section id="about"><h2>About JG Mobile Mechanic</h2>
-<p class="intro">Professional mobile mechanic services brought directly to you, helping save the time and hassle of taking your vehicle to a garage.</p>
-<div class="cards"><div class="card"><h3>Quality Workmanship</h3><p>Vehicle servicing, maintenance, diagnostics and repairs carried out with care.</p></div>
-<div class="card"><h3>Honest Pricing</h3><p>Clear labour pricing and straightforward communication about the work required.</p></div>
-<div class="card"><h3>Mobile Service</h3><p>Service at your home, workplace or suitable roadside location.</p></div></div></section>
-
-<section id="gallery"><h2>Gallery</h2><p class="intro">Recent JG Mobile Mechanic work.</p>
-<div class="gallery">
-<div class="photo">YOUR REPAIR PHOTO 1</div><div class="photo">YOUR REPAIR PHOTO 2</div><div class="photo">YOUR REPAIR PHOTO 3</div>
-<div class="photo">YOUR REPAIR PHOTO 4</div><div class="photo">YOUR REPAIR PHOTO 5</div><div class="photo">YOUR REPAIR PHOTO 6</div>
-</div></section>
-
-<section id="contact"><h2>Contact</h2><div class="contactbox">
-<p><strong>JG Mobile Mechanic — Johnny G.</strong></p>
-<p>Phone: <a href="tel:07857054666">07857 054666</a></p>
-<p>Email: <a href="mailto:jg.mechanic.73@gmail.com">jg.mechanic.73@gmail.com</a></p>
-<p><a class="btn" href="tel:07857054666">CALL TO BOOK</a></p>
-</div></section>
-<footer>© JG Mobile Mechanic • Quality service • Reliable • At your door</footer>
-</body></html>
+<div class="buttons"><a class="btn" href="tel:07857054666">☎ CALL 07857 054666</a><a class="btn white" href="mailto:jg.mechanic.73@gmail.com">✉ EMAIL US</a><a class="btn fb" href="https://www.facebook.com/JGmechanic" target="_blank" rel="noopener">f FACEBOOK</a></div>
+<section id="services"><h2>Services</h2><p class="lead">Professional mobile servicing, diagnostics and mechanical repairs at your home, workplace or suitable roadside location.</p>
+<div class="cards"><div class="card"><h3>Servicing</h3><p>Oil & filter, full and major services, filters, spark plugs and maintenance.</p></div><div class="card"><h3>Brakes & Suspension</h3><p>Pads, discs, brake fluid, springs, shocks, drop links, bearings and steering components.</p></div><div class="card"><h3>Engine & Cooling</h3><p>Belts, thermostat, water pump, radiator, coolant, sensors and engine repairs.</p></div><div class="card"><h3>Major Repairs</h3><p>Clutch, dual-mass flywheel, timing belt kit, timing chain, turbo and DPF removal/refit.</p></div><div class="card"><h3>Diagnostics</h3><p>Diagnostic scanning, advanced diagnostics, battery coding and service-light resets.</p></div></div></section>
+<section id="prices"><h2>Full Labour Price List</h2><p class="lead">This is your updated full price list, including timing belt/cambelt, timing chain, clutch, DMF, turbo, DPF, diagnostics and call-out charges.</p><img class="priceimg" src="price-list.png" alt="JG Mobile Mechanic full labour price list"></section>
+<section id="about"><h2>About JG Mobile Mechanic</h2><p class="lead">Reliable and professional mobile auto repair services at your home, workplace or roadside location. Quality workmanship, honest prices and straightforward service.</p></section>
+<section id="gallery"><h2>My Work</h2><p class="lead">Real photos from JG Mobile Mechanic jobs. Click any photo to view it full size.</p><div class="gallery"><a class="gallery-item" href="gallery-01.jpg" target="_blank"><img src="gallery-01.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-02.jpg" target="_blank"><img src="gallery-02.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-03.jpg" target="_blank"><img src="gallery-03.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-04.jpg" target="_blank"><img src="gallery-04.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-05.jpg" target="_blank"><img src="gallery-05.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-06.jpg" target="_blank"><img src="gallery-06.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-07.jpg" target="_blank"><img src="gallery-07.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-08.jpg" target="_blank"><img src="gallery-08.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-09.jpg" target="_blank"><img src="gallery-09.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-10.jpg" target="_blank"><img src="gallery-10.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-11.jpg" target="_blank"><img src="gallery-11.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-12.jpg" target="_blank"><img src="gallery-12.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-13.jpg" target="_blank"><img src="gallery-13.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-14.jpg" target="_blank"><img src="gallery-14.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-15.jpg" target="_blank"><img src="gallery-15.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-16.jpg" target="_blank"><img src="gallery-16.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-17.jpg" target="_blank"><img src="gallery-17.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-18.jpg" target="_blank"><img src="gallery-18.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
+<a class="gallery-item" href="gallery-19.jpg" target="_blank"><img src="gallery-19.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a></div></section>
+<section id="contact"><h2>Contact</h2><div class="contact"><p><strong>JG Mobile Mechanic — Johnny G.</strong></p><p>☎ <a href="tel:07857054666">07857 054666</a> — Call or WhatsApp</p><p>✉ <a href="mailto:jg.mechanic.73@gmail.com">jg.mechanic.73@gmail.com</a></p><p>Facebook: <a href="https://www.facebook.com/JGmechanic" target="_blank" rel="noopener">JG Mechanic</a></p></div></section>
+<footer>© JG Mobile Mechanic • Quality Service • Reliable • At Your Door</footer></body></html>
