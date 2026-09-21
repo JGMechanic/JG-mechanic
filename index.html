@@ -13,6 +13,17 @@ section{max-width:1200px;margin:auto;padding:60px 22px;border-bottom:1px solid #
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px}.gallery-item{height:190px;overflow:hidden;border-radius:10px;border:2px solid #333;background:#111}.gallery-item:hover{border-color:var(--y)}.gallery-item img{width:100%;height:100%;object-fit:cover;display:block}
 .contact{background:#151515;border-left:5px solid var(--y);padding:24px;border-radius:9px}.contact a{color:var(--y)}footer{text-align:center;padding:30px;color:#aaa}
 @media(max-width:650px){nav{gap:12px;font-size:13px}nav b{width:100%;text-align:center;margin:0}section{padding:42px 16px}h2{font-size:27px}.gallery-item{height:160px}}
+
+.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:24px}
+.price-card{background:#111;border:1px solid #333;border-radius:12px;overflow:hidden}
+.price-card h3{margin:0;padding:12px 14px;background:#000;color:#ffd21a;font-size:1rem}
+.price-row{display:flex;justify-content:space-between;gap:18px;padding:10px 14px;border-bottom:1px dotted #444}
+.price-row:last-child{border-bottom:0}
+.price-row strong{white-space:nowrap;color:#ffd21a}
+.price-notes{margin-top:22px;background:#111;border:1px solid #333;border-radius:12px;padding:18px}
+.price-notes h3{color:#ffd21a;margin:14px 0 8px}
+.price-notes h3:first-child{margin-top:0}
+
 </style></head><body>
 <nav><b>JG MOBILE MECHANIC</b><a href="#home">Home</a><a href="#services">Services</a><a href="#prices">Price List</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
 <div id="home" class="hero"><img src="jg-homepage.png" alt="JG Mobile Mechanic"></div>
@@ -23,7 +34,26 @@ section{max-width:1200px;margin:auto;padding:60px 22px;border-bottom:1px solid #
 </section>
 <section id="services"><h2>Services</h2><p class="lead">Professional mobile servicing, diagnostics and mechanical repairs at your home, workplace or suitable roadside location.</p>
 <div class="cards"><div class="card"><h3>Servicing</h3><p>Oil & filter, full and major services, filters, spark plugs and maintenance.</p></div><div class="card"><h3>Brakes & Suspension</h3><p>Pads, discs, brake fluid, springs, shocks, drop links, bearings and steering components.</p></div><div class="card"><h3>Engine & Cooling</h3><p>Belts, thermostat, water pump, radiator, coolant, sensors and engine repairs.</p></div><div class="card"><h3>Major Repairs</h3><p>Clutch, dual-mass flywheel, timing belt kit, timing chain, turbo and DPF removal/refit.</p></div><div class="card"><h3>Diagnostics</h3><p>Diagnostic scanning, advanced diagnostics, battery coding and service-light resets.</p></div></div></section>
-<section id="prices"><h2>Full Labour Price List</h2><p class="lead">This is your updated full price list, including timing belt/cambelt, timing chain, clutch, DMF, turbo, DPF, diagnostics and call-out charges.</p><img class="priceimg" src="price-list.png" alt="JG Mobile Mechanic full labour price list"></section>
+
+<section id="prices">
+  <h2>Price List</h2>
+  <p class="lead">Labour prices — updated from the latest JG Mobile Mechanic price list.</p>
+  <div class="price-grid">
+    <div class="price-card"><h3>SERVICING</h3><div class="price-row"><span>Oil &amp; filter service</span><strong>£40</strong></div><div class="price-row"><span>Full service</span><strong>£60</strong></div><div class="price-row"><span>Major service</span><strong>£80</strong></div></div><div class="price-card"><h3>BRAKES</h3><div class="price-row"><span>Front brake pads</span><strong>£40</strong></div><div class="price-row"><span>Rear brake pads</span><strong>£40</strong></div><div class="price-row"><span>Front discs &amp; pads</span><strong>£70</strong></div><div class="price-row"><span>Rear discs &amp; pads</span><strong>£70</strong></div><div class="price-row"><span>Brake fluid change</span><strong>£40</strong></div></div><div class="price-card"><h3>SUSPENSION &amp; STEERING</h3><div class="price-row"><span>Front drop links (pair)</span><strong>£60</strong></div><div class="price-row"><span>One drop link</span><strong>£40</strong></div><div class="price-row"><span>Front coil spring (each)</span><strong>£80</strong></div><div class="price-row"><span>Rear coil spring (pair)</span><strong>£70</strong></div><div class="price-row"><span>Front shock absorber (each)</span><strong>£80</strong></div><div class="price-row"><span>Rear shock absorbers (pair)</span><strong>£60</strong></div><div class="price-row"><span>Track rod end (each)</span><strong>£40</strong></div><div class="price-row"><span>Lower arm (each)</span><strong>£80</strong></div><div class="price-row"><span>Wheel bearing (front)</span><strong>£110</strong></div><div class="price-row"><span>Wheel bearing (rear)</span><strong>£90</strong></div><div class="price-row"><span>CV boot</span><strong>£80</strong></div><div class="price-row"><span>Driveshaft</span><strong>£110</strong></div></div><div class="price-card"><h3>ELECTRICAL</h3><div class="price-row"><span>Battery replacement</span><strong>£20</strong></div><div class="price-row"><span>Starter motor</span><strong>£80</strong></div><div class="price-row"><span>Alternator</span><strong>£90</strong></div><div class="price-row"><span>Ignition coil</span><strong>£20</strong></div></div><div class="price-card"><h3>ENGINE &amp; COOLING</h3><div class="price-row"><span>Auxiliary belt</span><strong>£40</strong></div><div class="price-row"><span>Tensioner &amp; belt</span><strong>£70</strong></div><div class="price-row"><span>Thermostat</span><strong>£80</strong></div><div class="price-row"><span>Water pump (not timing belt driven)</span><strong>£110</strong></div><div class="price-row"><span>Radiator</span><strong>£90</strong></div><div class="price-row"><span>Coolant flush</span><strong>£40</strong></div></div><div class="price-card"><h3>FILTERS &amp; MAINTENANCE</h3><div class="price-row"><span>Spark plugs</span><strong>£30</strong></div><div class="price-row"><span>Glow plugs</span><strong>£70</strong></div><div class="price-row"><span>Fuel filter</span><strong>£30</strong></div><div class="price-row"><span>Air filter</span><strong>£15</strong></div><div class="price-row"><span>Cabin filter</span><strong>£15</strong></div></div><div class="price-card"><h3>SENSORS &amp; COMPONENTS</h3><div class="price-row"><span>MAF sensor</span><strong>£20</strong></div><div class="price-row"><span>MAP sensor</span><strong>£20</strong></div><div class="price-row"><span>EGR valve</span><strong>£90</strong></div><div class="price-row"><span>Intake manifold</span><strong>£130</strong></div><div class="price-row"><span>Injector replacement (each)</span><strong>£50</strong></div></div><div class="price-card"><h3>MAJOR REPAIRS</h3><div class="price-row"><span>Clutch kit</span><strong>£300–£400</strong></div><div class="price-row"><span>Dual-mass flywheel &amp; clutch</span><strong>£400–£500</strong></div><div class="price-row"><span>Timing belt kit</span><strong>£250–£300</strong></div><div class="price-row"><span>Timing chain</span><strong>£350–£450</strong></div><div class="price-row"><span>Turbo replacement</span><strong>£320–£420</strong></div><div class="price-row"><span>DPF removal/refit</span><strong>£170–£300</strong></div></div><div class="price-card"><h3>DIAGNOSTICS</h3><div class="price-row"><span>Diagnostic scan</span><strong>£30</strong></div><div class="price-row"><span>Advanced diagnostics</span><strong>£50–£80</strong></div><div class="price-row"><span>Battery coding</span><strong>£20</strong></div><div class="price-row"><span>Brake reset / service light reset</span><strong>INCLUDED</strong></div></div>
+  </div>
+  <div class="price-notes">
+    <h3>CALL-OUT CHARGES</h3>
+    <p>Local call-out (within 10 miles): <strong>FREE or £20</strong></p>
+    <p>10–20 miles: <strong>£20–£30</strong></p>
+    <p>Over 20 miles: <strong>£0.75–£1.00 per mile</strong> (or quote individually)</p>
+    <h3>HOURLY RATE</h3>
+    <p>If a job isn't listed: <strong>£60/hour</strong> (recommended starting rate)</p>
+    <p>Minimum charge: <strong>1 hour</strong></p>
+    <h3>IMPORTANT INFORMATION</h3>
+    <p>Labour prices only. Parts are charged separately unless agreed. Prices shown are starting prices and may vary depending on vehicle make, model, condition and previous repairs. A fixed quotation will always be provided before work begins.</p>
+  </div>
+</section>
+
 <section id="about"><h2>About JG Mobile Mechanic</h2><p class="lead">Reliable and professional mobile auto repair services at your home, workplace or roadside location. Quality workmanship, honest prices and straightforward service.</p></section>
 <section id="gallery"><h2>My Work</h2><p class="lead">Real photos from JG Mobile Mechanic jobs. Click any photo to view it full size.</p><div class="gallery"><a class="gallery-item" href="gallery-01.jpg" target="_blank"><img src="gallery-01.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
 <a class="gallery-item" href="gallery-02.jpg" target="_blank"><img src="gallery-02.jpg" loading="lazy" alt="JG Mobile Mechanic repair work"></a>
